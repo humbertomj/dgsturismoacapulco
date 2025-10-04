@@ -190,14 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
   line-height: 1.2;
 }
-@media (max-width: 768px) {
-  #header .logo span {
-    display: none; /* Oculta el texto en móviles para no saturar */
-  }
-  #header .logo img {
-    max-height: 45px;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -2050,16 +2043,16 @@ section {
 
 /* Estilo principal para el botón desactivado */
 .cv-button.disabled {
-  background-color: #ccc;  /* Un color gris para indicar que está inactivo */
+  background-color: #ccc;  /* Color gris para indicar inactividad */
   color: #666;            /* Color de texto más opaco */
   cursor: not-allowed;     /* Muestra un cursor de "prohibido" al pasar el mouse */
   pointer-events: none;    /* Desactiva todos los clics y eventos del mouse */
 }
 
-/* Opcional: Asegurarse de que no haya ningún efecto hover */
+/* Anula cualquier efecto hover en el botón desactivado */
 .cv-button.disabled:hover {
   background-color: #ccc;
   color: #666;
-  border-color: transparent; /* Si usas bordes en el hover */
-  transform: none;           /* Anula cualquier animación de hover */
+  border-color: transparent; /* Anula el cambio de borde si lo hubiera */
+  transform: none;           /* Anula la animación de escala/movimiento */
 }
