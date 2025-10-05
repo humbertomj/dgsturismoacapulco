@@ -1395,7 +1395,8 @@ section {
 }
 
 .team .member .member-info {
-  padding: 20px 25px 30px 25px;
+  /* Padding horizontal reducido para más espacio */
+  padding: 20px 15px 25px 15px; 
   text-align: center;
   position: relative;
   background: #fff;
@@ -1404,13 +1405,15 @@ section {
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 6px;
-  font-size: 18px;
-  color: var(--uagro-azul); /* Nombre en color institucional */
+  /* Tamaño de fuente ligeramente reducido */
+  font-size: 16px; 
+  color: var(--uagro-azul);
 }
 
 .team .member .member-info span {
   display: block;
-  font-size: 14px;
+  /* Tamaño de fuente ligeramente reducido */
+  font-size: 13px; 
   font-weight: 400;
   color: var(--texto-secundario);
   position: relative;
@@ -1422,9 +1425,10 @@ section {
   content: '';
   position: absolute;
   display: block;
-  width: 50px;
+  /* Ancho en porcentaje para que se adapte al nuevo tamaño */
+  width: 60%; 
   height: 2px;
-  background: var(--uagro-rojo); /* Línea en color de acento */
+  background: var(--uagro-rojo);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
